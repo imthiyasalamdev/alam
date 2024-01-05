@@ -1,0 +1,137 @@
+
+.btnsPortfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .filterBtn{
+    width: auto;
+    border: 1px solid var(--color-secondary);
+    border-radius: 5px;
+    padding: 8px 15px;
+    text-transform: capitalize;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+
+  .projectInfo{
+    height: 70px;
+    padding: 5px 10px;
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .projectInfo p{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .projectInfo h5{
+    color: var(--color-secondary);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .filterBtn:hover{
+    background-color: var(--color-secondary);
+    transition: all 0.4s ease-in-out;
+  }
+
+  
+  .port-text {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .portfolios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+  
+  }
+  .portfolios .portfolio-item {
+    position: relative;
+    border-radius: 5px;
+    /* border: 1px solid var(--color-secondary); */
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, );
+  }
+
+
+
+
+
+
+  .portfolios .portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .portfolios .portfolio-item .hover-items {
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+  }
+  .portfolios .portfolio-item .hover-items h3 {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+  }
+  .portfolios .portfolio-item .hover-items .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolios .portfolio-item .hover-items .icons .icon {
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  .portfolios .portfolio-item .hover-items .icons .icon i {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin: 0 1rem;
+  }
+  .portfolios .portfolio-item .hover-items .icons .icon:hover {
+    background-color: var(--color-white);
+  }
+  .portfolios .portfolio-item .hover-items .icons .icon:hover i {
+    color: var(--color-primary);
+  }
+  
+  .portfolio-item:hover .hover-items {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+
+
+
+  
